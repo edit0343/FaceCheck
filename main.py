@@ -4,10 +4,17 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 import io
+import os
 
 st.title('顔認識アプリ')
 
-subscription_key='https://key-manager.vault.azure.net/secrets/WebApp--FaceCheck/21f6601cbbdc41e894f4c27902bf5005'
+
+from dotenv import load_dotenv
+
+load_dotenv()
+API_KEY = os.environ.get("API_KEY")
+
+subscription_key=API_KEY
 assert subscription_key
 
 face_api_url = 'https://202112116-kubo.cognitiveservices.azure.com/face/v1.0/detect'
