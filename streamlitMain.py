@@ -8,7 +8,7 @@ import os
 
 st.title('顔認識アプリ')
 
-subscription_key=API_KEY
+subscription_key=st.secrets["API_KEY"]
 assert subscription_key
 
 face_api_url = 'https://202112116-kubo.cognitiveservices.azure.com/face/v1.0/detect'
