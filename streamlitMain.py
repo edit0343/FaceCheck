@@ -5,11 +5,8 @@ from PIL import ImageDraw
 from PIL import ImageFont
 import io
 import os
-from dotenv import load_dotenv
-load_dotenv()
-st.title('顔認識アプリ')
 
-API_KEY = os.environ.get("API_KEY")
+st.title('顔認識アプリ')
 
 subscription_key=API_KEY
 assert subscription_key
