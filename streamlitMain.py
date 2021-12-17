@@ -47,7 +47,7 @@ if uploaded_file is not None:
             
             textcolor = (255, 255, 255)
             textsize=round(rect['width']/5)
-            font = ImageFont.truetype(font = "Arial Unicode.ttf", size=textsize)
+            font = ImageFont.truetype(font = "NewYork.ttf", size=textsize)
             
             txpos = (rect['left'], rect['top']-textsize*2.5)
             draw.text(txpos, text, font=font ,fill=textcolor)
